@@ -22,3 +22,7 @@ The following bash tools and techniques are used for text processing:
   - Redirecting
       - Pipes \- Used to redirect the output from one command as input for another or 
       - File redirects
+# Works Cited
+https://www.ss64.com/bash
+https://www.w3.org/Tools/HTML-XML-utils/
+http://www.imdb.com/

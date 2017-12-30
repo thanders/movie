@@ -1,12 +1,15 @@
-## Welcome to GitHub Pages
+# Welcome to Movie
+## a bash script for checking which movies are playing in your area.
 
-You can use the [editor on GitHub](https://github.com/thanders/movie/edit/master/docs/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The script is in bash and uses:
+- Wget
+- Grep
+- Sed
+- Hxnormalize
+- Hxselect
+- IFS
+- A for loop
+- Bash pipes and redirects
 
 ```markdown
 Syntax highlighted code block

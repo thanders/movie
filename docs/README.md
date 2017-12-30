@@ -1,8 +1,15 @@
+# Requirements
+
+1. a Bourne Again Shell (BASH) terminal emulator (e.g. Gnome Terminal)
+2. W3.org's html-xml-utils \- These can be installed by typing ``` apt install html-xml-utils ``` in your terminal emulator
+3. The movie.sh file
+
 # How to run the script
-1. Open a Bourne Again Shell (BASH) terminal emulator (e.g. Gnome Terminal)
-2. Change Directory (CD) into the directory that contains the movie.sh shell script
-3. Permission the script to be run by typing ``` CHMOD u+x movie.sh ```
-4. Execute the script ``` ./movie.sh ```
+1. Download the script from Github
+2. Open the terminal emulator
+3. Change Directory (CD) into the directory that contains the movie.sh shell script
+4. Permission the script to be run by typing ``` CHMOD u+x movie.sh ```
+5. Execute the script ``` ./movie.sh ```
 
 # Tools and Techniques used
 The following bash tools and techniques are used for text processing:

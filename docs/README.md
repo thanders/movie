@@ -1,5 +1,4 @@
-
-This script uses the following tools and techniques for text processing:
+The following bash tools and techniques are used for text processing:
   - Wget \- Retrieves web pages or files via HTTP, HTTPS or FTP
   - Grep \- Searches files for lines that match a given pattern
   - Sed \- A stream editor that is used to perform basic text transformations such as, selecting text between two patterns.

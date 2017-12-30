@@ -25,5 +25,7 @@ The following bash tools and techniques are used for text processing:
 
 # Works Cited
 https://www.ss64.com/bash
+
 https://www.w3.org/Tools/HTML-XML-utils/
+
 http://www.imdb.com/

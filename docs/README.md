@@ -1,5 +1,3 @@
-# Welcome to Movie
-> a script for checking which movies are playing in your area.
 
 This script uses the following tools and techniques for text processing:
   - Wget \- Retrieves web pages or files via HTTP, HTTPS or FTP

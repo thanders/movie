@@ -8,16 +8,4 @@ This script uses the following tools and techniques for text processing:
   - IFS \- Internal field separator
   - Redirecting
       - Pipes \- Used to redirect the output from one command as input for another or 
-      - File redirects 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
+      - File redirects

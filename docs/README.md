@@ -5,7 +5,7 @@
 3.  The movie.sh and process_movies.sh files
 
 # How to run the script
-1.  Download the script from Github
+1.  Download the both scripts from Github. Keep them in the same directory.
 2.  Open the terminal emulator
 3.  Change Directory (CD) into the directory that contains the movie.sh shell script
 4.  Permission the script to be run by typing ``` CHMOD u+x movie.sh ```

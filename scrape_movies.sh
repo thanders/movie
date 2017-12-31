@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir scrape
 # Download updated file
 wget -qO scrape/data.html www.imdb.com/showtimes/location?ref_=sh_lc

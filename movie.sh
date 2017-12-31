@@ -18,4 +18,4 @@ if [[ -e movies.txt ]]; then
 fi
 
 # Remove the movies.txt file
-rm movies.txt
+rm movie.txt

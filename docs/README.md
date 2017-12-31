@@ -8,7 +8,7 @@
 1.  Download the both scripts from Github. Keep them in the same directory.
 2.  Open the terminal emulator
 3.  Change Directory (CD) into the directory that contains the movie.sh shell script
-4.  Permission the script to be run by typing ``` CHMOD u+x movie.sh ```
+4.  Permission both scripts to be run by typing ``` CHMOD u+x movie.sh ``` and ``` CHMOD u+x process_movies.sh ```
 5.  Execute the script ``` ./movie.sh ```
 
 # Tools and Techniques used

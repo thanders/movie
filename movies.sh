@@ -2,10 +2,10 @@
 
 if nc -zw1 google.com 443; then
 	echo "Internet connection works over HTTPS (port 443)"
-	./scrape_movies.sh
+	./process_movies.sh
 elif nc -zw1 google.com 80; then
 	echo "Internet connection works over HTTP (port 80)"
-	./scrape_movies.sh
+	./process_movies.sh
 else
 	echo "Internet connection isn't working over HTTP or HTTPS (ports 80 or 443)"
 fi

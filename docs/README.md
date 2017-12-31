@@ -11,7 +11,7 @@
 4.  Permission both scripts to be run by typing ``` CHMOD u+x movie.sh ``` and ``` CHMOD u+x process_movies.sh ```
 5.  Execute the script ``` ./movie.sh ```
 
-# Tools and Techniques used
+# Tools and techniques used
 The following bash tools and techniques are used for text processing:
   - Wget \- Retrieves web pages or files via HTTP, HTTPS or FTP
   - Grep \- Searches files for lines that match a given pattern

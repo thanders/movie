@@ -2,7 +2,7 @@
 
 1.  A Bourne Again Shell (BASH) terminal emulator (e.g. Gnome Terminal)
 2.  W3.org's html-xml-utils \- These can be installed by typing ``` apt install html-xml-utils ``` in your terminal emulator
-3.  The movie.sh file
+3.  The movie.sh and process_movies.sh files
 
 # How to run the script
 1.  Download the script from Github

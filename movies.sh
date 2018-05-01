@@ -1,16 +1,11 @@
 #!/bin/bash
+# Make functions.sh file accessible by this script:
+. function_files/function.sh
 
-# Checks for connection to google.com from local port 443
-if nc -zw1 google.com 443; then
-	echo "Internet connection works over HTTPS (port 443)"
-	./process_movies.sh
-# Checks for connection to google.com from local port 80
-elif nc -zw1 google.com 80; then
-	echo "Internet connection works over HTTP (port 80)"
-	./process_movies.sh
-else
-	echo "Internet connection isn't working over HTTP or HTTPS (ports 80 or 443)"
-fi
+check_internet_connection response
+echo $response
+
+
 
 # If movies.txt exists:
 if [[ -e scrape/movies.txt ]]; then

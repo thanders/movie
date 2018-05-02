@@ -12,10 +12,7 @@ IFS=$'\n'
 title=()
 release_date=()
 
-for line in $(cat scrape/output.txt); do
-	title+=("`echo $line | grep 'alpha' | cut -d '"' -f 8,8`")
-	release_date+=("`echo $line | grep -C 1 'release_date' | cut -d '"' -f 16,16`")
-done
+cat data.csv | perl -pe 's/((?<=,)|(?<=^)),/ ,/g;' | column -t -s, | less -S
 
 n=${#title}
 

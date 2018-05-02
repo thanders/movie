@@ -13,9 +13,9 @@ page.xpath('//@style').remove
 # puts page.css('.title').text
 
 CSV.open("processed_files/parsed_output.csv", "wb", {:col_sep => "\t"}) do |csv|
-csv << ['Title', 'Release Date', 'Genre', 'User Rating', 'Runtime']
-page.css('.title').zip(page.css('#release_date'), page.css('.genre'), page.css('#user_rating'), page.css('#runtime')).each do |title, release_date, genre, user_rating, runtime|
+csv << ['Release Date', 'Title', 'Genre', 'User Rating', 'Runtime (mins)']
+page.css('#release_date').zip(page.css('.title'), page.css('.genre'), page.css('#user_rating'), page.css('#runtime')).each do |release_date, title, genre, user_rating, runtime|
   # csv << [title.text.gsub(/[[:space:]]/, '')]
-  csv << [title.text.gsub(/[[:space:]]/, '').strip, release_date.text.gsub(/[[:space:]]/, '').strip, genre.text.gsub(/[[:space:]]/, '').strip, user_rating.text.gsub(/[[:space:]]/, '').strip, runtime.text.gsub(/[[:space:]]/, '').strip]
+  csv << [release_date.text.strip, title.text.strip, genre.text.gsub(/[[:space:]]/, '').strip, user_rating.text.gsub(/[[:space:]]/, '').strip, runtime.text.strip]
   end
 end

@@ -16,12 +16,11 @@ ruby html_parser.ruby
 # clean_output
 
 number_mov=$(cat processed_files/parsed_output.csv | sed "1 d" | wc -l)
-
-
-echo -e '\n'
+today=$(date)
+echo "Movie data as of: $today"
 echo "Movies playing in your area: $number_mov"
 echo -e '\n'
-cat processed_files/parsed_output.csv | awk '{gsub("Release:", ""); gsub("Runtime:", "");print}' | awk 'NR<2{print $0;next}{print $0 | "sort -b -r -t$'#' -k 2.1,2.4 -k 2.6,2.7 -k 2.9,2.10 -r"}' | column -ts $'\t'
+cat processed_files/parsed_output.csv | awk '{gsub("Release:", ""); gsub("Runtime:", ""); gsub(" minutes", "");print}' | awk 'NR<2{print $0;next}{print $0 | "sort -b -t '\t' -k 1.9,1.12nr  -k 1.5,1.7Mr -k 1.1,1.3nr"}' | column -ts $'\t'
 
 # Remove the movies.txt file
 # rm -rf scrape
